@@ -2,20 +2,28 @@
     <title>Calculator</title>
     <script type = "text/javascript">  
       function calculate() {
-        document.getElementById("result").innerHTML = 
+        document.getElementById("result").value = 
           (755 + (parseFloat(document.getElementById("first").value) * 7.50062)) * (273.15 + 20) / 760 / (273.15 + 
           parseFloat(document.getElementById("second").value));         
       }  
 </script>  
+  <style>
+    html, body {
+      background-color: linen;
+    }
+    </style>
 </head>
 <body>
-<h1>Calculator</h1>
+<h1>Калькулятор</h1>
 <ln>
   <div>
-    <input type ="text" id ="first" value="" />
-    <input type ="text" id ="second" value="" />
-    <label id ="result">Not calculated</label>
-    </div>
-  </br>
-  <input type ="button" value="Calculate" onclick = "calculate()"/>  
+    <b><label for = "first">кПа</label></b><br>
+    <input type = "text" id = "first" placeholder = "Веедите значение" /><br><br>
+    <b><label for = "second">t˚C</label></b><br>
+    <input type = "text" id = "second" placeholder = "Веедите значение" /><br><br>
+    <b><label for = "result">нм³/ч</label></b><br>
+    <input type = "text" id = "result" disabled placeholder = "Не рассчитано"/>
+  </div>
+  <br>
+  <input type = "button" color = "orange" value = "Рассчитать" onclick = "calculate()"/>  
 </body>
