@@ -1,0 +1,21 @@
+<head>
+    <title>Calculator</title>
+    <script type = "text/javascript">  
+      function calculate() {
+        document.getElementById("result").innerHTML = 
+          (755 + (parseFloat(document.getElementById("first").value) * 7.50062)) * (273.15 + 20) / 760 / (273.15 + 
+          parseFloat(document.getElementById("second").value));         
+      }  
+</script>  
+</head>
+<body>
+<h1>Calculator</h1>
+<ln>
+  <div>
+    <input type ="text" id ="first" value="" />
+    <input type ="text" id ="second" value="" />
+    <label id ="result">Not calculated</label>
+    </div>
+  </br>
+  <input type ="button" value="Calculate" onclick = "calculate()"/>  
+</body>
