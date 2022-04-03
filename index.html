@@ -20,22 +20,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <div class="container">
+  <div class="container"><br>
   <h1>Калькулятор</h1>
-  <form>
-    <div class="mb-3">
-      <b><label for = "first" class="form-label">кПа</label></b>
-      <input type = "text" class="form-control" id = "first" placeholder = "Веедите значение" />
-    </div>
-    <div class="mb-3">
-      <b><label for = "second" class="form-label">t˚C</label></b>
-      <input type = "text" class="form-control" id = "second" placeholder = "Веедите значение" />
-    </div>
-    <div class="mb-3">
-      <b><label for = "result" class="form-label">нм³/ч</label></b>
-      <input type = "text" class="form-control" id = "result" placeholder = "Не рассчитано"/>
-    </div>
-    <button type="submit" class="btn btn-success" onclick = "calculate()">Рассчитать</button> 
-  </form>
+  <hr/>
+    <div class="container">
+    <form>
+      <div class="mb-3">
+        <b><label for = "first" class="form-label">кПа</label></b>
+        <input type = "text" class="form-control" id = "first" placeholder = "Веедите значение" />
+      </div>
+      <div class="mb-3">
+        <b><label for = "second" class="form-label">t˚C</label></b>
+        <input type = "text" class="form-control" id = "second" placeholder = "Веедите значение" />
+      </div>
+      <div class="mb-3">
+        <b><label for = "result" class="form-label">нм³/ч</label></b>
+        <input type = "text" class="form-control" id = "result" placeholder = "Не рассчитано"/>
+      </div>
+      </form>
+    <button type="submit" class="btn btn-success float-end" onclick = "calculate()">Рассчитать</button> 
+     </div>
   </div>
 </body>
